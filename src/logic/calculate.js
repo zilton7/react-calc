@@ -1,22 +1,64 @@
-/* eslint-disable no-param-reassign, eqeqeq, no-undef */
-import operate from './operate';
+/* eslint-disable no-param-reassign */
+import operate from "./operate";
 
 const calculate = (buttonName, dataObj) => {
+  let { total, next, operation } = dataObj;
   const val = parseFloat(buttonName);
   if (val.isNaN()) {
-    dataObj.total += val;
-  } else if (buttonName == '+/-') {
-    dataObj.total *= -1;
-    dataObj.next *= -1;
-  } else if (buttonName == 'AC') {
-    dataObj.total = '';
-    dataObj.next = '';
-    dataObj.operation = '';
-  } else if (buttonName == '=') {
+    total += val;
+  } else if (buttonName === "+/-") {
+    total *= -1;
+    next *= -1;
+  } else if (buttonName === "AC") {
+    total = "";
+    next = "";
+    operation = "";
+  } else if (buttonName === "=") {
     operate(total, next, operation);
-    dataObj.total = '';
-    dataObj.next = '';
-    dataObj.operation = '';
+    total = "";
+    next = "";
+    operation = "";
+  } else if (buttonName === ".") {
+    if (!total) {
+      total = "0.";
+    }
+    if (total && operation) {
+      total += ".";
+    }
+    if (total && next && operation) {
+      next += ".";
+    }
+    if (total && operation && !next) {
+      next = "0.";
+    }
+  } else if ([...Array(10).keys()].includes(buttonName)) {
+    if (!operation) {
+      if (!total) {
+        total = buttonName;
+      } else if (total === "number") {
+        total = buttonName;
+      } else {
+        total += buttonName;
+      }
+    } else if (!next) {
+      next = buttonName;
+    } else {
+      next += buttonName;
+    }
+  } else if (buttonName === "%") {
+    next /= 100;
+    total /= 100;
+  }
+  if (["+", "-", "*", "/"].includes(buttonName)) {
+    if (!total) total = "0";
+    if (total && !next) {
+      operation = buttonName;
+    }
+    if (total && next && operation) {
+      total = Operate(total, next, operation);
+      next = null;
+      operation = buttonName;
+    }
   }
   return dataObj;
 };
