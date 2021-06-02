@@ -1,4 +1,4 @@
-# Project Name
+# React Calculator
 
 ![screenshot](./app_screenshot.png)
 
