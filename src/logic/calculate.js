@@ -1,24 +1,23 @@
 import operate from "./operate";
 
-const calculate = (buttonName, data_obj) => {
+const calculate = (buttonName, dataObj) => {
   let val = parseFloat(buttonName);
   if (val != NaN) {
-    console.log("good");
-    data_obj.total += val;
+    dataObj.total += val;
   } else if (buttonName == "+/-") {
-    data_obj.total *= -1;
-    data_obj.next *= -1;
+    dataObj.total *= -1;
+    dataObj.next *= -1;
   } else if (buttonName == "AC") {
-    data_obj.total = "";
-    data_obj.next = "";
-    data_obj.operation = "";
+    dataObj.total = "";
+    dataObj.next = "";
+    dataObj.operation = "";
   } else if (buttonName == "=") {
     operate(total, next, operation);
-    data_obj.total = "";
-    data_obj.next = "";
-    data_obj.operation = "";
+    dataObj.total = "";
+    dataObj.next = "";
+    dataObj.operation = "";
   }
-  return data_obj;
+  return dataObj;
 };
 
 export default calculate;
