@@ -1,23 +1,23 @@
 html {
-    font-size: 62.5%;
-  }
-
-body {
-    display:flex;
-    justify-content: center;
-    align-items: center;
+  font-size: 62.5%;
 }
 
-.button-panel{
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-    width: 28rem;
-    text-align: center;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-panel {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 28rem;
+  text-align: center;
 }
 
 input#result {
-    text-align: right;
+  text-align: right;
 }
