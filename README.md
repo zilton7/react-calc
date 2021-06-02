@@ -1,6 +1,9 @@
 # REACT APP (Milestone-1)
 [LIVE APP](https://react-calc-zil.herokuapp.com/)
 
+The React Calculator is able to perform basic calculations. After inputting a value, an operator, and another value it will display the result of calculation.
+Since this project is focused on practicing state and props available to a react component class, it is not using hooks and utilizes only minimal CSS styling.
+
 
 # Getting Started with Create React App
 
