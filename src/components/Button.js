@@ -1,10 +1,11 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+import React from 'react';
 
 function Button({ name }) {
   return (
-    <React.Fragment>
-      <button>{name}</button>
-    </React.Fragment>
+    <>
+      <button type="button">{name}</button>
+    </>
   );
 }
 

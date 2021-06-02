@@ -1,9 +1,9 @@
-import React from "react";
-import Button from "./Button";
+import React from 'react';
+import Button from './Button';
 
 function ButtonPanel() {
   return (
-    <div class="button-panel">
+    <div className="button-panel">
       <div>
         <Button name="AC" />
         <Button name="+/-" />
