@@ -1,19 +1,21 @@
-import Big from "big.js";
+/* eslint-disable no-param-reassign, eqeqeq, no-undef, no-unused-vars */
+
+import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  let res = "";
+  let res = '';
   const firstNumber = new Big(numberOne);
   const secondNumber = new Big(numberTwo);
 
-  if (operation == "-") {
+  if (operation == '-') {
     res = numberOne.minus(numberTwo);
-  } else if (operation == "+") {
+  } else if (operation == '+') {
     res = numberOne.plus(numberTwo);
-  } else if (operation == "X") {
+  } else if (operation == 'X') {
     res = numberOne.times(numberTwo);
-  } else if (operation == "/") {
+  } else if (operation == '/') {
     res = numberOne.div(numberTwo);
-  } else if (operation == "%") {
+  } else if (operation == '%') {
     res = numberOne.div(100);
   }
 
