@@ -1,5 +1,6 @@
-import React from "react";
-import Button from "./Button";
+/* eslint-disable react/prop-types */
+import React from 'react';
+import Button from './Button';
 
 function ButtonPanel({ clickHandler }) {
   return (

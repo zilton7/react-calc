@@ -1,41 +1,41 @@
 /* eslint-disable no-param-reassign */
-import operate from "./operate";
+import operate from './operate';
 
 const calculate = (buttonName, dataObj) => {
   let { total, next, operation } = dataObj;
-  if (buttonName === "+/-") {
+  if (buttonName === '+/-') {
     total *= -1;
     next *= -1;
   }
-  if (buttonName === "AC") {
+  if (buttonName === 'AC') {
     total = null;
     next = null;
     operation = null;
   }
-  if (buttonName === "=") {
+  if (buttonName === '=') {
     total = operate(total, next, operation);
     next = null;
     operation = null;
   }
-  if (buttonName === ".") {
+  if (buttonName === '.') {
     if (!total) {
-      total = "0.";
+      total = '0.';
     }
     if (total && operation) {
-      total += ".";
+      total += '.';
     }
     if (total && next && operation) {
-      next += ".";
+      next += '.';
     }
     if (total && operation && !next) {
-      next = "0.";
+      next = '0.';
     }
   }
   if ([...Array(10)].map((_, i) => `${i}`).includes(buttonName)) {
     if (operation === null) {
       if (total === null) {
         total = buttonName;
-      } else if (typeof total === "number") {
+      } else if (typeof total === 'number') {
         total = buttonName;
       } else {
         total += buttonName;
@@ -46,13 +46,13 @@ const calculate = (buttonName, dataObj) => {
       next += buttonName;
     }
   }
-  if (buttonName === "%") {
+  if (buttonName === '%') {
     total *= 0.01;
     next *= 0.01;
   }
-  if (["+", "-", "*", "÷"].includes(buttonName)) {
+  if (['+', '-', '*', '÷'].includes(buttonName)) {
     if (!total) {
-      total = "0";
+      total = '0';
     }
     if (total && !next) {
       operation = buttonName;

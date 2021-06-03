@@ -1,8 +1,9 @@
-import React, { Component } from "react";
-import Display from "./Display";
-import ButtonPanel from "./ButtonPanel";
-import "../styles/App.scss";
-import calculate from "../logic/calculate";
+/* eslint-disable react/no-unused-state */
+import React, { Component } from 'react';
+import Display from './Display';
+import ButtonPanel from './ButtonPanel';
+import '../styles/App.scss';
+import calculate from '../logic/calculate';
 
 class App extends Component {
   constructor(props) {
@@ -26,7 +27,7 @@ class App extends Component {
   };
 
   render() {
-    const { next, total, operation } = this.state;
+    const { next, total } = this.state;
 
     return (
       <>
