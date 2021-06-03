@@ -1,77 +1,62 @@
 # REACT CALC
-[LIVE APP](https://react-calc-zil.herokuapp.com/)
 
 The React Calc App is able to perform basic calculations. After inputting a value, an operator, and another value it will display the result of calculation.
 Since this project is focused on practicing state and props available to a react component class, it is not using hooks and utilizes only minimal CSS styling.
 
+![screenshot](./app_screenshot.png)
 
-# Getting Started with Create React App
+## BUILT WITH
+- JavaScript
+- Sass
+- NPM
+- React
+- React-Create-App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Demo
+[LIVE APP](https://react-calc-zil.herokuapp.com/)
 
-## Available Scripts
+## Getting Started Locally
+Prerequisities
 
-In the project directory, you can run:
+To get this project up and running locally, you must have node and npm installed on your computer.
 
-### `yarn start`
+To get this project set up on your local machine, follow these simple steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Navigate to the local folder where you want the repository to be cloned and run 
+`git clone https://github.com/zilton7/react-calc.git`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Navigate to the directory :
+`cd react-calc`
 
-### `yarn test`
+To start the server: 
+`npm start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Go to http://localhost:3000/ in your browser to see the application running
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Author
+**ZIL NORVILIS**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Github: [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zilton7)
+- Linkedin: [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zil-norvilis/)
+- Twitter: [![](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/devnor7)
+- 
+## 🤝 Contributing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Contributions, issues, and feature requests are welcome!
 
-### `yarn eject`
+Feel free to check the [issues page](../../issues/).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Show your support
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Give a ⭐️ if you like this project!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Acknowledgments
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
 
-## Learn More
+## 📝 License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.
