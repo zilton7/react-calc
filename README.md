@@ -1,4 +1,4 @@
-# REACT APP (Milestone-1)
+# REACT APP
 [LIVE APP](https://react-calc-zil.herokuapp.com/)
 
 The React Calculator is able to perform basic calculations. After inputting a value, an operator, and another value it will display the result of calculation.
