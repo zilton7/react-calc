@@ -3,14 +3,10 @@ import React from 'react';
 
 function Display({ calculation }) {
   return (
-    <>
+    <div className="display">
       <input id="result" value={calculation || '0'} />
-    </>
+    </div>
   );
 }
-
-Display.defaultProps = {
-  result: null,
-};
 
 export default Display;

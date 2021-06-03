@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unused-state */
-import React, { Component } from 'react';
-import Display from './Display';
-import ButtonPanel from './ButtonPanel';
-import '../styles/App.scss';
-import calculate from '../logic/calculate';
+import React, { Component } from "react";
+import Display from "./Display";
+import ButtonPanel from "./ButtonPanel";
+import "../styles/App.scss";
+import calculate from "../logic/calculate";
 
 class App extends Component {
   constructor(props) {
@@ -31,7 +31,7 @@ class App extends Component {
 
     return (
       <>
-        <h1>Calculator</h1>
+        <h1>React Calculator App</h1>
         <Display calculation={next || total} />
         <ButtonPanel
           clickHandler={(e) => this.handleClick(e.target.innerText)}
