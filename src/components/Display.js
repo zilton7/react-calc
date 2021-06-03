@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-function Display({ calculate }) {
+function Display({ calculation }) {
   return (
-    <>
-      <input id="result" value={calculate || '0'} />
-    </>
+    <div className="display">
+      <input id="result" value={calculation || '0'} />
+    </div>
   );
 }
 

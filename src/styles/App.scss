@@ -9,15 +9,18 @@ body {
 }
 
 .button-panel {
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
+  margin: 2rem auto;
   width: 28rem;
   text-align: center;
 }
 
 input#result {
   text-align: right;
+  width: 100%;
+  margin: 0 1rem;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
 }

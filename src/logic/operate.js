@@ -11,9 +11,9 @@ const operate = (numberOne, numberTwo, operation) => {
     res = firstNumber.minus(secondNumber);
   } else if (operation === '+') {
     res = firstNumber.plus(secondNumber);
-  } else if (operation === 'X') {
+  } else if (operation === '*') {
     res = firstNumber.times(secondNumber);
-  } else if (operation === '/') {
+  } else if (operation === '÷') {
     res = firstNumber.div(secondNumber);
   } else if (operation === '%') {
     res = firstNumber.div(100);

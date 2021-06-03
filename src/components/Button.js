@@ -1,10 +1,12 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-function Button({ name }) {
+function Button({ name, handleClick }) {
   return (
     <>
-      <button type="button">{name}</button>
+      <button type="button" onClick={handleClick}>
+        {name}
+      </button>
     </>
   );
 }
