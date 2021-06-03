@@ -1,6 +1,6 @@
 # REACT CALC
 
-The React Calc App is able to perform basic calculations. After inputting a value, an operator, and another value it will display the result of calculation.
+The React Calc App is able to perform basic calculations. After inputting a value, an operator, and another value it will display the result of the calculation.
 Since this project is focused on practicing state and props available to a react component class, it is not using hooks and utilizes only minimal CSS styling.
 
 ![screenshot](./app_screenshot.png)
