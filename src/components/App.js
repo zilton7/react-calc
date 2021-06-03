@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import { useState } from "react";
 import Display from "./Display";
 import ButtonPanel from "./ButtonPanel";
 import "../styles/App.scss";
 import calculate from "../logic/calculate";
 
-class App extends React.Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,20 +17,24 @@ class App extends React.Component {
 
   handleClick = (buttonName) => {
     const data = this.state;
-    const result = calculate(data, buttonName);
+    const calculation = calculate(buttonName, data);
     this.setState({
-      total: result.total,
-      next: result.next,
-      operation: result.operation,
+      total: calculation.total,
+      next: calculation.next,
+      operation: calculation.operation,
     });
   };
 
   render() {
+    const { next, total, operation } = this.state;
+
     return (
       <>
         <h1>Calculator</h1>
-        <Display calculate={calculate} />
-        <ButtonPanel />
+        <Display calculation={next || total} />
+        <ButtonPanel
+          clickHandler={(e) => this.handleClick(e.target.innerText)}
+        />
       </>
     );
   }
