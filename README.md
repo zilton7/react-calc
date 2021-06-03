@@ -18,25 +18,28 @@ Since this project is focused on practicing state and props available to a react
 ## Getting Started Locally
 Prerequisities
 
-To get this project up and running locally, you must have node and npm installed on your computer.
+To run this project locally, you must have node and npm installed on your machine.
 
-To get this project set up on your local machine, follow these simple steps:
+To set up this project on your local machine:
 
-Navigate to the local folder where you want the repository to be cloned and run 
+Navigate to the folder where you want the repository to be copied and run 
+
 `git clone https://github.com/zilton7/react-calc.git`
 
 Navigate to the directory :
+
 `cd react-calc`
 
 To start the server: 
+
 `npm start`
 
 Go to http://localhost:3000/ in your browser to see the application running
 
 
 ## Author
-**ZIL NORVILIS**
 
+**ZIL NORVILIS**
 - Github: [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zilton7)
 - Linkedin: [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zil-norvilis/)
 - Twitter: [![](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/devnor7)
