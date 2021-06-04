@@ -8,9 +8,10 @@ Since this project is focused on practicing state and props available to a react
 ## BUILT WITH
 - JavaScript
 - Sass
-- NPM
+- Npm
 - React
 - React-Create-App
+- Webpack
 
 ## Live Demo
 [LIVE APP](https://react-calc-zil.herokuapp.com/)
