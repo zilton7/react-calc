@@ -25,12 +25,10 @@ const App = () => {
 
   return (
     <>
-      <h1>React Calculator App</h1>
       <Display calculation={next || total} />
       <ButtonPanel clickHandler={(e) => handleClick(e.target.innerText)} />
     </>
   );
 };
-
 
 export default App;
