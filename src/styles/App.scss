@@ -8,9 +8,22 @@ body {
   align-items: center;
 }
 
+.calculator {
+  width: 70rem;
+}
+
+button {
+  width: 17.5rem;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+}
+
 .button-panel {
   margin: 2rem auto;
-  width: 28rem;
+  width: 100%;
   text-align: center;
 }
 
@@ -18,6 +31,8 @@ input#result {
   text-align: right;
   width: 100%;
   margin: 0 1rem;
+  background: rgb(177, 177, 177);
+  color: white;
 }
 
 .display {
