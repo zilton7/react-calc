@@ -1,3 +1,6 @@
+$grey: #858694;
+$orange: #f5913e;
+
 html {
   font-size: 62.5%;
 }
@@ -13,29 +16,41 @@ body {
 }
 
 button {
-  width: 17.5rem;
+  width: 25%;
+  font-size: 2rem;
+  border-radius: 0;
+  border-style: solid;
+  background: white;
+
+  &:hover{
+    scale: .95;
+  }
 }
 
 .group {
   display: flex;
   flex-direction: row;
+  height: 10rem;
 }
 
 .button-panel {
-  margin: 2rem auto;
   width: 100%;
   text-align: center;
 }
 
 input#result {
   text-align: right;
+  font-size: 3rem;
   width: 100%;
-  margin: 0 1rem;
-  background: rgb(177, 177, 177);
+  background: grey;
   color: white;
+  font-weight: bold;
+  padding: 0 2rem;
+  border: 0;
 }
 
 .display {
   display: flex;
   justify-content: center;
+  height: 10rem;
 }
