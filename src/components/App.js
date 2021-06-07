@@ -32,8 +32,12 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/calculator">
-          <Display calculation={next || total} />
-          <ButtonPanel clickHandler={(e) => handleClick(e.target.innerText)} />
+          <div class="calculator">
+            <Display calculation={next || total} />
+            <ButtonPanel
+              clickHandler={(e) => handleClick(e.target.innerText)}
+            />
+          </div>
         </Route>
       </Switch>
     </main>
