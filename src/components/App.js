@@ -1,9 +1,11 @@
 /* eslint-disable react/no-unused-state */
-import React, { useState } from 'react';
-import Display from './Display';
-import ButtonPanel from './ButtonPanel';
-import '../styles/App.scss';
-import calculate from '../logic/calculate';
+import React, { useState } from "react";
+import Display from "./Display";
+import ButtonPanel from "./ButtonPanel";
+import "../styles/App.scss";
+import calculate from "../logic/calculate";
+import Navbar from "./Navbar";
+import { Route, Switch } from "react-router-dom";
 
 const App = () => {
   const [data, setData] = useState({
@@ -24,10 +26,11 @@ const App = () => {
   const { next, total } = data;
 
   return (
-    <>
-      <Display calculation={next || total} />
-      <ButtonPanel clickHandler={(e) => handleClick(e.target.innerText)} />
-    </>
+    <main>
+      <Navbar />
+      <Switch />
+      <Route path="/" component="/Home" />
+    </main>
   );
 };
 
