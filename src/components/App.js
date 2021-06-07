@@ -4,6 +4,7 @@ import Display from "./Display";
 import ButtonPanel from "./ButtonPanel";
 import "../styles/App.scss";
 import calculate from "../logic/calculate";
+import Home from "./Home";
 import Navbar from "./Navbar";
 import { Route, Switch } from "react-router-dom";
 
@@ -28,8 +29,13 @@ const App = () => {
   return (
     <main>
       <Navbar />
-      <Switch />
-      <Route path="/" component="/Home" />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/calculator">
+          <Display calculation={next || total} />
+          <ButtonPanel clickHandler={(e) => handleClick(e.target.innerText)} />
+        </Route>
+      </Switch>
     </main>
   );
 };
