@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Display from "../components/Display";
+import Display from "../../components/Display";
 
 test("renders Display", () => {
   render(<Display />);
