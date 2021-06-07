@@ -5,6 +5,7 @@ import ButtonPanel from "./ButtonPanel";
 import "../styles/App.scss";
 import calculate from "../logic/calculate";
 import Home from "./Home";
+import Quote from "./Quote";
 import Navbar from "./Navbar";
 import { Route, Switch } from "react-router-dom";
 
@@ -39,6 +40,7 @@ const App = () => {
             />
           </div>
         </Route>
+        <Route exact path="/quote" component={Quote} />
       </Switch>
     </main>
   );
