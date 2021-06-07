@@ -5,33 +5,33 @@ import Button from './Button';
 function ButtonPanel({ clickHandler }) {
   return (
     <div className="button-panel">
-      <div>
-        <Button name="AC" handleClick={clickHandler} />
-        <Button name="+/-" handleClick={clickHandler} />
-        <Button name="%" handleClick={clickHandler} />
+      <div className="group">
+        <Button name="AC" handleClick={clickHandler} color="white" />
+        <Button name="+/-" handleClick={clickHandler} color="white" />
+        <Button name="%" handleClick={clickHandler} color="white" />
         <Button name="÷" handleClick={clickHandler} />
       </div>
-      <div>
-        <Button name="7" handleClick={clickHandler} />
-        <Button name="8" handleClick={clickHandler} />
-        <Button name="9" handleClick={clickHandler} />
+      <div className="group">
+        <Button name="7" handleClick={clickHandler} color="white" />
+        <Button name="8" handleClick={clickHandler} color="white" />
+        <Button name="9" handleClick={clickHandler} color="white" />
         <Button name="*" handleClick={clickHandler} />
       </div>
-      <div>
-        <Button name="4" handleClick={clickHandler} />
-        <Button name="5" handleClick={clickHandler} />
-        <Button name="6" handleClick={clickHandler} />
+      <div className="group">
+        <Button name="4" handleClick={clickHandler} color="white" />
+        <Button name="5" handleClick={clickHandler} color="white" />
+        <Button name="6" handleClick={clickHandler} color="white" />
         <Button name="-" handleClick={clickHandler} />
       </div>
-      <div>
-        <Button name="1" handleClick={clickHandler} />
-        <Button name="2" handleClick={clickHandler} />
-        <Button name="3" handleClick={clickHandler} />
+      <div className="group">
+        <Button name="1" handleClick={clickHandler} color="white" />
+        <Button name="2" handleClick={clickHandler} color="white" />
+        <Button name="3" handleClick={clickHandler} color="white" />
         <Button name="+" handleClick={clickHandler} />
       </div>
-      <div>
-        <Button name="0" handleClick={clickHandler} />
-        <Button name="." handleClick={clickHandler} />
+      <div className="group">
+        <Button name="0" handleClick={clickHandler} wide color="white" />
+        <Button name="." handleClick={clickHandler} color="white" />
         <Button name="=" handleClick={clickHandler} />
       </div>
     </div>

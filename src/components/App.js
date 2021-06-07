@@ -30,13 +30,12 @@ class App extends Component {
     const { next, total } = this.state;
 
     return (
-      <>
-        <h1>React Calculator App</h1>
+      <div className="calculator">
         <Display calculation={next || total} />
         <ButtonPanel
           clickHandler={(e) => this.handleClick(e.target.innerText)}
         />
-      </>
+      </div>
     );
   }
 }

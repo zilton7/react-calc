@@ -1,10 +1,20 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-function Button({ name, handleClick }) {
+function Button({
+  name, handleClick, wide, color,
+}) {
   return (
     <>
-      <button type="button" onClick={handleClick}>
+      <button
+        type="button"
+        name={name}
+        onClick={handleClick}
+        style={{
+          background: color || '#f5913e',
+          width: wide ? '50%' : '25%',
+        }}
+      >
         {name}
       </button>
     </>
