@@ -1,44 +1,35 @@
 /* eslint-disable react/no-unused-state */
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import '../styles/App.scss';
 import calculate from '../logic/calculate';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-    this.handleClick.bind(this);
-  }
+const App = () => {
+  const [data, setData] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
-  handleClick = (buttonName) => {
-    const data = this.state;
+  const handleClick = (buttonName) => {
     const calculation = calculate(buttonName, data);
-    this.setState({
+    setData({
       total: calculation.total,
       next: calculation.next,
       operation: calculation.operation,
     });
   };
 
-  render() {
-    const { next, total } = this.state;
+  const { next, total } = data;
 
-    return (
-      <>
-        <h1>React Calculator App</h1>
-        <Display calculation={next || total} />
-        <ButtonPanel
-          clickHandler={(e) => this.handleClick(e.target.innerText)}
-        />
-      </>
-    );
-  }
-}
+  return (
+    <>
+      <h1>React Calculator App</h1>
+      <Display calculation={next || total} />
+      <ButtonPanel clickHandler={(e) => handleClick(e.target.innerText)} />
+    </>
+  );
+};
 
 export default App;
