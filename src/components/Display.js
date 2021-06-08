@@ -3,7 +3,7 @@ import React from 'react';
 
 const Display = ({ calculation }) => (
   <div className="display">
-    <input id="result" value={calculation || '0'} />
+    <input id="result" defaultValue={calculation || '0'} />
   </div>
 );
 

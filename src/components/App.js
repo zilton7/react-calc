@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unused-state */
 import React, { useState } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
+
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import '../styles/App.scss';
@@ -28,21 +29,23 @@ const App = () => {
   const { next, total } = data;
 
   return (
-    <main>
-      <Navbar />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/calculator">
-          <div className="calculator">
-            <Display calculation={next || total} />
-            <ButtonPanel
-              clickHandler={(e) => handleClick(e.target.innerText)}
-            />
-          </div>
-        </Route>
-        <Route exact path="/quote" component={Quote} />
-      </Switch>
-    </main>
+    <BrowserRouter>
+      <main>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/calculator">
+            <div className="calculator">
+              <Display calculation={next || total} />
+              <ButtonPanel
+                clickHandler={(e) => handleClick(e.target.innerText)}
+              />
+            </div>
+          </Route>
+          <Route exact path="/quote" component={Quote} />
+        </Switch>
+      </main>
+    </BrowserRouter>
   );
 };
 

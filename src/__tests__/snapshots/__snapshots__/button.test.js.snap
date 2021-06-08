@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Button correctly 1`] = `
+<button
+  style={
+    Object {
+      "background": "#f5913e",
+      "width": "25%",
+    }
+  }
+  type="button"
+/>
+`;
