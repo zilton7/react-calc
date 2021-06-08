@@ -1,3 +1,6 @@
+$grey: #858694;
+$orange: #f5913e;
+
 html {
   font-size: 62.5%;
 }
@@ -8,19 +11,89 @@ body {
   align-items: center;
 }
 
+main {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.quote {
+  font-size: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  h3 {
+    font-size: 2rem;
+    width: 50%;
+    text-align: center;
+  }
+
+  .navbar-links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .navbar-link {
+      font-size: 1.5rem;
+      margin: 0 3rem;
+    }
+  }
+}
+
+.calculator {
+  width: 70rem;
+}
+
+button {
+  width: 25%;
+  font-size: 2rem;
+  border-radius: 0;
+  border-style: solid;
+  background: white;
+
+  &:hover {
+    scale: 0.95;
+  }
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  height: 10rem;
+}
+
 .button-panel {
-  margin: 2rem auto;
-  width: 28rem;
+  width: 70rem;
   text-align: center;
 }
 
-input#result {
+input {
   text-align: right;
-  width: 100%;
-  margin: 0 1rem;
+  font-size: 3rem;
+  width: 70rem;
+  background: grey;
+  color: white;
+  font-weight: bold;
+  padding: 0 2rem;
+  border: 0;
 }
 
 .display {
   display: flex;
   justify-content: center;
+  height: 10rem;
 }
