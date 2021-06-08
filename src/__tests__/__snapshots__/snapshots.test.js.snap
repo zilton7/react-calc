@@ -1,0 +1,345 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders App correctly 1`] = `
+<main>
+  <div
+    className="navbar"
+  >
+    <h3>
+      Math Magicians
+    </h3>
+    <div
+      className="navbar-links"
+    >
+      <a
+        className="navbar-link"
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+      <a
+        className="navbar-link"
+        href="/calculator"
+        onClick={[Function]}
+      >
+        Calculator
+      </a>
+      <a
+        className="navbar-link"
+        href="/quote"
+        onClick={[Function]}
+      >
+        Quote
+      </a>
+    </div>
+  </div>
+  <h2>
+    Welcome to our page!
+  </h2>
+  <p
+    id="article"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+</main>
+`;
+
+exports[`renders Button correctly 1`] = `
+<button
+  style={
+    Object {
+      "background": "#f5913e",
+      "width": "25%",
+    }
+  }
+  type="button"
+/>
+`;
+
+exports[`renders ButtonPanel correctly 1`] = `
+<div
+  className="button-panel"
+>
+  <div
+    className="group"
+  >
+    <button
+      name="AC"
+      style={
+        Object {
+          "background": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      AC
+    </button>
+    <button
+      name="+/-"
+      style={
+        Object {
+          "background": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      +/-
+    </button>
+    <button
+      name="%"
+      style={
+        Object {
+          "background": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      %
+    </button>
+    <button
+      name="÷"
+      style={
+        Object {
+          "background": "#f5913e",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      ÷
+    </button>
+  </div>
+  <div
+    className="group"
+  >
+    <button
+      name="7"
+      style={
+        Object {
+          "background": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      7
+    </button>
+    <button
+      name="8"
+      style={
+        Object {
+          "background": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      8
+    </button>
+    <button
+      name="9"
+      style={
+        Object {
+          "background": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      9
+    </button>
+    <button
+      name="*"
+      style={
+        Object {
+          "background": "#f5913e",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      *
+    </button>
+  </div>
+  <div
+    className="group"
+  >
+    <button
+      name="4"
+      style={
+        Object {
+          "background": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      4
+    </button>
+    <button
+      name="5"
+      style={
+        Object {
+          "background": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      5
+    </button>
+    <button
+      name="6"
+      style={
+        Object {
+          "background": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      6
+    </button>
+    <button
+      name="-"
+      style={
+        Object {
+          "background": "#f5913e",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      -
+    </button>
+  </div>
+  <div
+    className="group"
+  >
+    <button
+      name="1"
+      style={
+        Object {
+          "background": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      1
+    </button>
+    <button
+      name="2"
+      style={
+        Object {
+          "background": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      2
+    </button>
+    <button
+      name="3"
+      style={
+        Object {
+          "background": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      3
+    </button>
+    <button
+      name="+"
+      style={
+        Object {
+          "background": "#f5913e",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      +
+    </button>
+  </div>
+  <div
+    className="group"
+  >
+    <button
+      name="0"
+      style={
+        Object {
+          "background": "white",
+          "width": "50%",
+        }
+      }
+      type="button"
+    >
+      0
+    </button>
+    <button
+      name="."
+      style={
+        Object {
+          "background": "white",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      .
+    </button>
+    <button
+      name="="
+      style={
+        Object {
+          "background": "#f5913e",
+          "width": "25%",
+        }
+      }
+      type="button"
+    >
+      =
+    </button>
+  </div>
+</div>
+`;
+
+exports[`renders Display correctly 1`] = `
+<div
+  className="display"
+>
+  <input
+    defaultValue="0"
+    id="result"
+  />
+</div>
+`;
+
+exports[`renders Home correctly 1`] = `
+Array [
+  <h2>
+    Welcome to our page!
+  </h2>,
+  <p
+    id="article"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>,
+]
+`;
+
+exports[`renders Quote correctly 1`] = `
+<p
+  className="quote"
+>
+  Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding. - William Paul Thurston.
+</p>
+`;
