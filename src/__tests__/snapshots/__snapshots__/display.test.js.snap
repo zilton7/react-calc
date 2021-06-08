@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Display correctly 1`] = `
+<div
+  className="display"
+>
+  <input
+    defaultValue="0"
+    id="result"
+  />
+</div>
+`;
